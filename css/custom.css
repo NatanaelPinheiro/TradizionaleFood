@@ -1,0 +1,274 @@
+body{
+	min-height: 100vh;
+	font-family: 'Merriweather', serif;
+	position: relative;
+	scroll-behavior: smooth;
+	padding-bottom: 120px;
+	background-color: #f2e8cf;
+}
+
+section{
+	min-height: 75vh;
+	padding-top: 70px;
+}
+
+/*COLORS*/
+
+.bg-bolder-green{background-color: #386641;}
+.bg-bold-green{background-color: #6a994e;}
+.bg-normal-green{background-color: #a7c957;}
+.bg-red{background-color: #bc4749;}
+.bg-sand{background-color: #f2e8cf;}
+.fs-clr-bolder-green{color: #386641;}
+.fs-clr-bold-green{color: #6a994e;}
+.fs-clr-normal-green{color: #a7c957;}
+.fs-clr-sand{color: #f2e8cf;}
+.fs-clr-red{color: #bc4749;}
+
+
+/*HEADER*/
+
+.navbar a{
+	color: #fff;
+}
+
+.navbar .nav-link{
+	transition: 0.2s;
+	padding: 0.5rem 1rem;
+	margin: 0 0.5rem;
+	border: 2px solid #bc4749;
+	border-radius: 0.25em;
+}
+
+.navbar .nav-link:hover,
+.navbar .nav-link.active{
+	transition: 0.3s;
+	color: #fff;
+	transform: scale(0.95);
+	border-bottom: 2px solid #fff;
+}
+
+.navbar .navbar-brand{
+	font-family: 'Hurricane', serif;
+	font-size: 28px;
+}
+
+.navbar-collapse{
+	flex-grow: 0;
+}
+
+.navbar-toggler-icon i{
+	font-size: 25px;
+}
+
+
+/*HOME SECTION*/
+
+#home-section h1{
+	font-family: 'Hurricane', serif;
+	font-size: 50px;
+}
+
+#home-section .subtitle{
+	font-size: 16px;
+	font-style: italic;
+	font-weight: bold;
+}
+
+#home-section .cta-text{
+	font-size: 16px;
+	line-height: 1.8rem;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+#home-section .cta-btn{
+	transition: 0.3s;
+	border: 2px solid #bc4749;
+	background-color: #bc4749;
+	color: #f2e8cf;
+}
+
+#home-section .cta-btn:hover{
+	background-color: #f2e8cf;
+	transition: 0.5s;
+	color: #bc4749;
+}
+
+#home-section .img-cont{
+	width: 300px;
+	height: 300px;
+	border-radius: 20px;
+}
+
+#home-section .img-cont img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 20px;
+}
+
+/*CAROUSEL*/
+
+#mainSlide .carousel-item,
+#mainSlide .carousel-inner {
+	height: 70vh;
+}
+
+#mainSlide .carousel-caption{
+	top: 30%;
+}
+
+#mainSlide h5{
+	margin-bottom: 20px;
+	font-size: 60px;
+	font-family: 'Hurricane', serif;
+}
+
+#mainSlide .carousel-bg{
+	height: 100%;
+	position: relative;
+}
+
+#mainSlide img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#mainSlide .carousel-bg::after{
+	position: absolute;
+	content: "";
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	left: 0;
+	background-color: #0005;
+}
+
+/*CLIENTS SECTION*/
+
+#clients-section{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#clients-section h2{
+    color: #fff;
+    font-family: 'Hurricane', serif;
+    font-size: 60px;
+    position: relative;
+    margin-bottom: 3rem;
+}
+
+#clients-section h2::after{
+	position: absolute;
+	content: "";
+	height: 2px;
+	width: 70px;
+	bottom: -10px;
+	left: 0;
+	background-color: #fff;
+}
+
+#clients-section .testimonial{
+	max-width: 200px;
+	min-width: 180px;
+	margin: 5px;
+}
+
+#clients-section .img-cont{
+	width: 180px;
+	height: 180px;
+}
+
+#clients-section img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+    border-radius: 50%;
+}
+
+#clients-section .testimonial-text p{
+	font-size: 13px;
+	line-height: 1.8;
+	text-align: center;
+	font-style: italic;
+	color: #fff;
+}
+
+#clients-section .testimonial-footer p{
+	color: #fff;
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+
+/*CONTACT*/
+
+#contact-section .img-cont{
+/*	width: 300px;
+	height: 300px;*/
+}
+
+#contact-section img{
+    width: 350px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#contact-section h2{
+	font-size: 60px;
+	margin-bottom: 2rem;
+	font-family: 'Hurricane', serif;
+}
+
+#contact-section p,
+#contact-section ul{
+    color: #6a994e;
+    line-height: 1.6;
+}
+
+#contact-section p{
+	font-weight: bold;
+	font-style: italic;
+	color: #bc4749;
+}
+
+#contact-section li{
+	list-style: none;
+}
+
+#contact-section i{
+	margin-right: 8px;
+}
+/*FOOTER*/
+
+footer{
+	width: 100%;
+	padding: 1rem 0 0 0;
+	position: absolute;
+	bottom: 0;
+}
+
+footer #brand-name{
+	font-weight: bold;
+	font-style: italic;
+}
+
+footer li{
+	list-style: none;
+}
+
+footer i{
+	color: #f2e8cf;
+	font-size: 20px;
+	margin-right: 1.5rem;
+}
+
+footer i:hover{
+	color: darkred;
+}
